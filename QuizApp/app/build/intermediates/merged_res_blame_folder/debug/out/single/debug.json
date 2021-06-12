@@ -12,6 +12,10 @@
         "source": "C:\\Users\\vivek\\AndroidStudioProjects\\QuizApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\vivek\\AndroidStudioProjects\\QuizApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_curve.xml.flat",
+        "source": "C:\\Users\\vivek\\AndroidStudioProjects\\QuizApp\\app\\src\\main\\res\\drawable\\rounded_curve.xml"
+    },
+    {
         "merged": "C:\\Users\\vivek\\AndroidStudioProjects\\QuizApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\vivek\\AndroidStudioProjects\\QuizApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },

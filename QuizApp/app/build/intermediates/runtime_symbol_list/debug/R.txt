@@ -1689,9 +1689,10 @@ int drawable notification_template_icon_bg 0x7f08008a
 int drawable notification_template_icon_low_bg 0x7f08008b
 int drawable notification_tile_bg 0x7f08008c
 int drawable notify_panel_notification_icon_bg 0x7f08008d
-int drawable test_custom_background 0x7f08008e
-int drawable tooltip_frame_dark 0x7f08008f
-int drawable tooltip_frame_light 0x7f080090
+int drawable rounded_curve 0x7f08008e
+int drawable test_custom_background 0x7f08008f
+int drawable tooltip_frame_dark 0x7f080090
+int drawable tooltip_frame_light 0x7f080091
 int font acme 0x7f090000
 int font cairo_bold 0x7f090001
 int id A 0x7f0a0000

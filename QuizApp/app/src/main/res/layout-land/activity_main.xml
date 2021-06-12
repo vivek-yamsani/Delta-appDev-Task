@@ -20,20 +20,22 @@
 
     <TextView
         android:id="@+id/RanDate"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
+        android:textAlignment="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/black"
         android:textColor="@color/white"
         android:textSize="35sp"
         android:visibility="visible"
         android:fontFamily="@font/cairo_bold"
+        android:background="@drawable/rounded_curve"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        android:gravity="center_horizontal" />
 
 
 

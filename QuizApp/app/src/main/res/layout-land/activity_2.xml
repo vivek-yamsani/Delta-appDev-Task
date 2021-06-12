@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity2"
-    android:background="#F80B0B">
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/Scoreboard"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
-        android:background="#5C000000"
+        android:background="@drawable/rounded_curve"
         android:gravity="center_horizontal"
         android:padding="50dp"
         android:textAlignment="center"
@@ -44,7 +44,7 @@
         android:id="@+id/quit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#9F650205"
+        android:backgroundTint="#9FF30B12"
         android:onClick="quit"
         android:padding="10dp"
         android:text="@string/quit"
