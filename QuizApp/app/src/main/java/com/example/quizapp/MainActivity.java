@@ -9,12 +9,14 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Arrays;
 import java.util.Calendar;
@@ -144,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
         gc.set(Calendar.DAY_OF_YEAR, dayOfYear);
 
         TextView textView = findViewById(R.id.RanDate);
-        textView.setText(gc.get(Calendar.DAY_OF_MONTH) +" / " + (gc.get(Calendar.MONTH) + 1) + " / "+gc.get(Calendar.YEAR) );
+        textView.setText(gc.get(Calendar.DAY_OF_MONTH) +" - " + (gc.get(Calendar.MONTH) + 1) + " - "+gc.get(Calendar.YEAR) );
 
         return gc.get(Calendar.DAY_OF_WEEK);
     }
@@ -158,6 +160,10 @@ public class MainActivity extends AppCompatActivity {
     public void button(View view) {
         RadioGroup radioGroup = findViewById(R.id.options);
         int id = radioGroup.getCheckedRadioButtonId();
+        if(id == -1){
+            Toast.makeText(this,"Please select an option", Toast.LENGTH_LONG).show();
+            return ;
+        }
         Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             VibrationEffect vibrationEffect = VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE);
@@ -169,7 +175,8 @@ public class MainActivity extends AppCompatActivity {
         if(id == ansRd){
             score += 1;
             layout.setBackgroundColor(Color.GREEN);
-
+            radioGroup.clearCheck();
+            remoCol();
             game();
         }
         else{
@@ -179,6 +186,22 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         }
+
+    }
+
+    public void remoCol(){
+        Handler handler = new Handler();
+
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                ConstraintLayout layout = findViewById(R.id.Layout1);
+
+                layout.setBackgroundColor(Color.BLACK);
+            }
+        };
+
+        handler.postDelayed(runnable,700);
     }
 }
 

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity2"
-    android:background="#F80B0B">
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/Scoreboard"
@@ -17,6 +17,7 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:fontFamily="@font/cairo_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,10 +27,11 @@
     <Button
         android:id="@+id/play"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:padding="10dp"
+        android:fontFamily="@font/acme"
         android:onClick="regame"
         android:text="@string/play_again"
         android:backgroundTint="#AB2A9EFA"
@@ -40,8 +42,9 @@
     <Button
         android:id="@+id/quit"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="@string/quit"
+        android:fontFamily="@font/acme"
         android:padding="10dp"
         android:onClick="quit"
         android:backgroundTint="#9F650205"

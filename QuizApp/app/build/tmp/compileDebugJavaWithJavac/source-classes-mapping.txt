@@ -1,0 +1,7 @@
+com/example/quizapp/BuildConfig.java
+ com.example.quizapp.BuildConfig
+com/example/quizapp/Activity2.java
+ com.example.quizapp.Activity2
+com/example/quizapp/MainActivity.java
+ com.example.quizapp.MainActivity
+ com.example.quizapp.MainActivity$1
