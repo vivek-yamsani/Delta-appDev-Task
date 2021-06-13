@@ -30,7 +30,7 @@
 19-->C:\Users\vivek\AndroidStudioProjects\QuizApp\app\src\main\AndroidManifest.xml:12:9-54
 20        android:supportsRtl="true"
 20-->C:\Users\vivek\AndroidStudioProjects\QuizApp\app\src\main\AndroidManifest.xml:13:9-35
-21        android:testOnly="true"
+21        android:testOnly="false"
 21-->C:\Users\vivek\AndroidStudioProjects\QuizApp\app\src\main\AndroidManifest.xml:10:9-33
 22        android:theme="@style/Theme.QuizApp" >
 22-->C:\Users\vivek\AndroidStudioProjects\QuizApp\app\src\main\AndroidManifest.xml:14:9-45
